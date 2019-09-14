@@ -1,0 +1,143 @@
+/*
+  Name: Sukayna Kugshia
+  Date: 9/14/2019
+  Description: The stylesheet.css file includes all the styling elements for the web page. 
+
+                                  Assignment #3 
+*/
+
+/*Applies the box size and the font-family style through out the web page.*/
+* {
+    box-sizing: border-box;
+    font-family: Garamond;
+  }
+
+#menu{
+     font-style:bold;
+     padding: 24px 15px;
+     text-decoration: none;
+   }
+
+.menu-description{
+     padding: 0px 15px 24px 30px;
+      background: #eaece5;
+      float: left;
+      height:700px;
+      border: 1px solid black;
+      display: block;
+      margin-top: 3%;
+      overflow: hidden;
+      position: relative;
+    }
+   /*When the user hovers over the box, the cursor changes to a
+    resize cursor and will be able to fertically scroll through the content within the box.*/
+   
+     .menu-description:hover{ 
+        overflow-y: scroll;
+     }
+
+     .navbar-brand{
+        text-decoration: none;
+        padding:2px 0px 0px 30px;
+     }
+
+     .navbar{
+       padding:0px 0px 0px 0px;
+     }
+ 
+/*The chicken header applies an orange background.*/
+#chickenTitle {
+      background: #F19F4D;
+      border: 1px solid black;
+      color: #fff;
+      position: relative;
+      width:auto;
+      top: 0px;
+      right: 0px;
+    }
+
+  /*The beef header applies a yellow background.*/
+ #beefTitle {
+      background: #F9CF00;
+      border: 1px solid black;
+      color: #fff;
+      position: relative;
+      width:auto;
+      top: 0px;
+      right: 0px;
+    }
+
+  /*The sushi header applies a blue background.*/
+ #sushiTitle {
+      background: #4484CE;
+      border: 1px solid black;
+      color: #fff;
+      position: relative;
+      width:auto;
+      top: 0px;
+      right: 0px;
+   }
+
+/*For Desktop View.*/
+@media (min-width: 992px) and (max-width: 1200px) {
+    
+  /*When the user hovers over the box, the cursor changes to a
+    resize cursor and will be able to fertically scroll through the content within the box.*/
+ 
+     .menu-description:hover{ 
+      overflow-y: scroll;
+     }
+}
+
+/*For Tablet View.*/
+@media (min-width: 768px) and (max-width: 991px) {
+    .menu-description{
+      background: #eaece5;
+      float: left;
+      height:500px;
+      border: 1px solid black;
+      display: block;
+      overflow: hidden;
+      position: relative;
+    }
+     .menu-description:hover{ 
+      overflow-y: scroll;
+     }
+   
+}
+
+
+/*For Mobile View.*/
+@media  (max-width: 767px) {
+
+  header{
+    width: 100%;
+    padding: 0px 0px 0px 0px;
+  }
+
+     #chickenTitle, #beefTitle, #sushiTitle{
+      position: relative;
+      width:100%;
+      top: 0px;
+      right: 0px;
+    }
+
+    .menu-description{
+      float: left;
+      text-align: center;
+      height: 150px;
+    }
+    .menu-description:hover{ 
+      overflow-y: scroll;
+     }
+     #navbarNavAltMarkup{
+      background: #eaece5;
+      text-decoration: none;
+      width:100%;
+     }
+     #navbarNavAltMarkup a:hover {
+     background: #e3e0cc;
+     width:100%;
+    }
+    
+}
